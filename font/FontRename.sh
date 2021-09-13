@@ -43,6 +43,3 @@ find . -type f -name 'SF-Mono*' | while read FILE ; do
     mv "${FILE}" "${newfile}" ;
 done 
 
-
-git config user.name 'necro-mancer'
-git config user.email 'cryptosauron@protonmail.com'
