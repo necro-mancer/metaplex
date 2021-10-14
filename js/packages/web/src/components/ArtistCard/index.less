@@ -5,6 +5,8 @@
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 20px;
+  background: url('/img/img1.jpg');
+  background-size: contain;
 
   .ant-card-body {
     display: flex;
@@ -14,16 +16,10 @@
     text-align: left;
 
     /* gradients/metal */
-    background: #282828;
+    background: url('/img/img2.jpg');
+    background-size: cover;
     box-shadow: inset 0px 4px 20px rgba(0, 0, 0, 0.3);
     border-radius: 0px 0px 8px 8px;
-  }
-
-  .ant-avatar {
-    width: 64px;
-    height: 64px;
-    margin-top: -32px;
-    margin-left: 16px;
   }
 
   .artist-card-name {
@@ -36,4 +32,14 @@
 .artist-card img {
   border-radius: 50%;
   cursor: pointer;
+}
+
+.artist-avatar {
+  background: url('/img/banner-w.gif');
+  background-size: cover;
+  width: 64px;
+  height: 64px;
+  margin-top: -32px;
+  margin-left: 16px;
+  shape: 'square';
 }

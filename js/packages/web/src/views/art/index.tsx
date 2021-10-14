@@ -83,7 +83,7 @@ export const ArtView = () => {
         <Row ref={ref}>
           <Col xs={{ span: 24 }} md={{ span: 12 }} style={{ marginTop: 40, padding: '30px' }}>
             <ArtContent
-              style={{ width: 450 }}
+              style={{ width: '450px', height: '300px', margin: '0 auto' }}
               height={300}
               width={450}
               className="artwork-image"
@@ -130,7 +130,7 @@ export const ArtView = () => {
                         }}
                       >
                         <MetaAvatar creators={[creator]} size={32} />
-                        <div className="art-edition">&nbsp;{creator.address}</div>
+                        <div className="art-edition">&nbsp;necromancer</div>
                         <div>
                           <div style={{ marginLeft: 10 }}>
                             {!creator.verified &&

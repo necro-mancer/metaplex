@@ -12,6 +12,7 @@ import {
   HomeView,
   Widgets,
   WidgetBS58UINT8,
+  GenSpaceView
 } from './views';
 import { AdminView } from './views/admin';
 import { BillingView } from './views/auction/billing';
@@ -40,6 +41,16 @@ export function Routes() {
             />
             <Route
               exact
+              path="/genspace"
+              component={() => <GenSpaceView />}
+            />
+            <Route
+              exact
+              path="/auctions"
+              component={() => <HomeView />}
+            />
+            <Route
+              exact
               path="/widgets"
               component={() => <Widgets />}
             />
@@ -63,7 +74,7 @@ export function Routes() {
               path="/auction/:id/billing"
               component={() => <BillingView />}
             />
-            <Route path="/" component={() => <HomeView />} />
+            <Route path="/" component={() => <GenSpaceView />} />
           </Switch>
         </Providers>
       </HashRouter>

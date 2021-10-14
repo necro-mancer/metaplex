@@ -54,7 +54,7 @@ async function getProgramAccounts(
   }
 
   const args = connection._buildArgs([programId], commitment, 'base64', extra);
-  // console.log(args)
+
   const unsafeRes = await (connection as any)._rpcRequest(
     'getProgramAccounts',
     args,
@@ -159,8 +159,7 @@ export const loadAccounts = async (connection: Connection, all: boolean) => {
           ),
         );
       } else {
-        console.log('Metaplex ID: ' + METADATA_PROGRAM_ID);
-        console.log('Pulling optimized NFTs');
+        console.log('Pulling optimized NFTs ...');
         for (let i = 0; i < MAX_CREATOR_LIMIT; i++) {
           for (let j = 0; j < whitelistedCreators.length; j++) {
             additionalPromises.push(
@@ -197,10 +196,11 @@ export const loadAccounts = async (connection: Connection, all: boolean) => {
   await Promise.all(additionalPromises);
 
   await postProcessMetadata(tempCache, all);
+
   console.log('Perpetual metadata size:', tempCache.metadata.length, 'tokens');
 
   if (additionalPromises.length > 0) {
-    console.log('Pulling editions for optimized metadata ...');
+    console.log('Pulling editions for optimising metadata ...');
     let setOf100MetadataEditionKeys: string[] = [];
     const editionPromises: Promise<{
       keys: string[];
@@ -224,6 +224,7 @@ export const loadAccounts = async (connection: Connection, all: boolean) => {
           ).toBase58();
         } else {
           edition = await getEdition(tempCache.metadata[i].info.mint);
+          // const balance: checkBalances(metadata);
         }
 
         setOf100MetadataEditionKeys.push(edition);

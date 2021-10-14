@@ -77,9 +77,9 @@ export const WidgetBS58UINT8 = () => {
                       onOk() {navigator.clipboard.writeText('[' + `${convertBS58toUINT8}` + ']');
                       message.success('Copied to clipboard!');
                       },
-                      okText: "Copy",
+                      okText: "Copy 256-bit AES key",
                       onCancel() {setString(''); message.success('Flushed!');},
-                      cancelText: "Flush",
+                      cancelText: "Flush data",
                     });
                  }}
                >
@@ -101,9 +101,9 @@ export const WidgetBS58UINT8 = () => {
                       onOk() {navigator.clipboard.writeText('[' + `${convertBS58toUINT8}` + ']');
                       message.success('Copied to clipboard!');
                       },
-                      okText: "Copy",
+                      okText: "Copy 256-bit AES key",
                       onCancel() {message.success('Flushed!')},
-                      cancelText: "Flush",
+                      cancelText: "Flush data",
                     });
                  }}
                >
@@ -111,7 +111,8 @@ export const WidgetBS58UINT8 = () => {
                </Button>
              </Form.Item>
              <p></p>
-             <p>Copy-paste the decoded string to your local id.json private file to import your wallet through Solana CLI</p>
+             <h5>• Copy-paste the decoded string to your local id.json private file to import your wallet through Solana CLI.<br></br>• You can also decode your 44-character long base58 ⦾SOL wallet address to AES 256-bit public key.
+             </h5>
              </Col>
              </Row>
           </>

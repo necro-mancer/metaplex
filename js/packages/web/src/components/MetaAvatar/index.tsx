@@ -10,12 +10,13 @@ const MetaAvatarItem = (props: {
 }) => {
   const { creator, size, alt } = props;
   const [noImage, setNoImage] = useState(false);
-  const image = creator.image || '';
+  const image = creator.image || '/banner-w.gif';
 
   return (
     <Avatar
       alt={alt}
       size={size}
+      shape="square"
       src={
         noImage ? (
           <Identicon
@@ -42,9 +43,8 @@ export const MetaAvatar = (props: {
 }) => {
   const { creators, showMultiple } = props;
   let size = props.size || 32;
-
   if (!creators || creators.length === 0) {
-    return <Avatar size={size} src={false} />;
+    return <Avatar size={size} src={false} shape="square" />;
   }
 
   let controls = (creators || []).map(creator => (

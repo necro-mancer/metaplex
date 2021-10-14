@@ -44,11 +44,11 @@ export const AmountLabel = (props: IAmountLabel) => {
       )}
       {displayUSD && (
         <div className="usd">
-          {PriceNaN === false ? (
+          ~({PriceNaN === false ? (
             formatUSD.format(priceUSD || 0)
           ) : (
             <div className="placebid">Place Bid</div>
-          )}
+          )})
         </div>
       )}
     </div>

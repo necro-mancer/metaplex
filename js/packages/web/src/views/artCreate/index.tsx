@@ -775,10 +775,10 @@ const RoyaltiesSplitter = (props: {
                 gutter={[0, 16]}
                 style={{ margin: '5px auto' }}
               >
-                <Col span={4} style={{ padding: 10 }}>
+                <Col span={4} style={{ marginRight: 60, padding: 10 }}>
                   {creator.label}
                 </Col>
-                <Col span={3}>
+                <Col span={4}>
                   <InputNumber<number>
                     min={0}
                     max={100}
@@ -789,7 +789,7 @@ const RoyaltiesSplitter = (props: {
                     className="royalties-input"
                   />
                 </Col>
-                <Col span={4} style={{ paddingLeft: 12 }}>
+                <Col span={12} style={{ paddingLeft: 12 }}>
                   <Slider value={amt} onChange={handleChangeShare} />
                 </Col>
                 {props.isShowErrors && amt === 0 && (
@@ -890,7 +890,7 @@ const RoyaltiesStep = (props: {
             <span className="field-title">Creators Split</span>
             <p>
               This is how much of the proceeds from the initial sale and any
-              royalties will be split out amongst the creators.
+              royalties will be split out amongst the creators. Enter an amount or use the slider.
             </p>
             <RoyaltiesSplitter
               creators={[...fixedCreators, ...creators]}
@@ -911,7 +911,7 @@ const RoyaltiesStep = (props: {
               color: 'white',
               fontSize: 25,
               padding: '0px 8px 3px 8px',
-              background: 'rgb(57, 57, 57)',
+              background: 'transparent',
               borderRadius: '50%',
               marginRight: 5,
               verticalAlign: 'middle',

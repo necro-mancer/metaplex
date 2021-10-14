@@ -13,7 +13,7 @@ export const isMetadataPartOfStore = (
   if (useAll) {
     return true;
   }
-  // console.log(m?.account?.owner)
+  
   if (!m?.info?.data?.creators || !store?.info || !m?.account?.owner) {
     return false;
   }

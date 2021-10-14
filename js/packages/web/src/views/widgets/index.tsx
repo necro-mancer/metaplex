@@ -45,9 +45,6 @@ export const Widgets = () => {
                <Link to={'/widgets/bs58touint8'}>
                  <Button type="default"
                     style={{ marginTop: 20 }}
-                      onClick={() => {
-                         message.info('Taking you to BASE58-UINT8 decoder', 1);
-                      }}
                     >
                     Take me to BASE58-UINT8 decoder
                  </Button>

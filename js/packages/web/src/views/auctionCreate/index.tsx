@@ -617,7 +617,7 @@ const CategoryStep = (props: {
       <Row className="call-to-action">
         <h2>List an item</h2>
         <p>
-          First time listing on Metaplex? Good luck!
+          This DApp uses Metaplex contract for listing. Good luck!
         </p>
       </Row>
       <Row justify={width < 768 ? 'center' : 'start'}>

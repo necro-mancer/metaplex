@@ -66,10 +66,10 @@ export const WalletModal: FC = () => {
           marginBottom: 10,
         }}
       >
-        M
+        ⦾
       </div>
 
-      <h2>{selected ? 'Change provider' : 'Welcome to Metaplex'}</h2>
+      <h2>{selected ? 'Change provider' : 'P⦾wered by Metaplex '}</h2>
       <p>
         {selected
           ? 'Feel free to switch wallet provider'

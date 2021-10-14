@@ -14,7 +14,7 @@ export const HomeView = () => {
 
   return (
     <Layout style={{ margin: 0, marginTop: 30, alignItems: 'center' }}>
-      {showAuctions ? <AuctionListView /> : <SetupView />}
+        {showAuctions ? <AuctionListView /> : <SetupView />}
     </Layout>
   );
 };

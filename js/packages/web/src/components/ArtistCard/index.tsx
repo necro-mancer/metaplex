@@ -14,7 +14,7 @@ export const ArtistCard = ({ artist }: { artist: Artist }) => {
       cover={<div style={{ height: 100 }} />}
     >
       <div>
-        <MetaAvatar creators={[artist]} size={100} />
+        <div className="artist-avatar" ></div>
         <div className="artist-card-name">
           {artist.name || shortenAddress(artist.address || '')}
         </div>

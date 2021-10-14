@@ -8,13 +8,13 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Non-fungible Matrix</title>
+        <title>N⦾n-fungible Matrix</title>
       </Head>
       
       <div id="root">
         <span style={{color: "orange"}}>(base) root@local:~$ </span>
         <span style={{color:  "white"}}>gsissh matrix</span><br />
-        <span style={{color:  "white"}}>&gt; Connecting to &#10686; Solana via metaplex ...</span><br />
+        <span style={{color:  "white"}}>&gt; this space is powered by Metaplex and always under development; stay cautious. Connecting to </span><span>S</span><span style={{ fontSize: 18, fontWeight: 'bold' }}>&#10686;</span><span>LANA ...</span><br />
         <span style={{color: "lightgreen"}}>(host) guest@matrix:~$ </span>
         <span className="typewriter-end"></span>
         

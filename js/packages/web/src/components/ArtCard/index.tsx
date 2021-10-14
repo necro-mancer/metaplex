@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardProps, Button, Badge } from 'antd';
+import { Card, CardProps, Button, Badge, Divider } from 'antd';
 import { MetadataCategory, StringPublicKey } from '@oyster/common';
 import { ArtContent } from './../ArtContent';
 import { useArt } from '../../hooks';
@@ -54,7 +54,7 @@ export const ArtCard = (props: ArtCardProps) => {
   if (art.type === ArtType.NFT) {
     badge = 'Unique';
   } else if (art.type === ArtType.Master) {
-    badge = 'NFT 0';
+    badge = 'Genesis';
   } else if (art.type === ArtType.Print) {
     badge = `${art.edition} of ${art.supply}`;
   }
@@ -95,7 +95,7 @@ export const ArtCard = (props: ArtCardProps) => {
         title={`${name}`}
         description={
           <>
-            <MetaAvatar creators={creators} size={32} /><span className="edition-badge">necromancer</span><br />
+            <MetaAvatar creators={creators} size={32} />&nbsp;<span className="info-content-small" ><i>by</i></span>&nbsp;<span className="info-content">necromancer</span><br /><br />
             {/* {art.type === ArtType.Master && (
               <>
                 <br />
