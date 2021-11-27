@@ -74,7 +74,7 @@ export function Routes() {
               path="/auction/:id/billing"
               component={() => <BillingView />}
             />
-            <Route path="/" component={() => <GenSpaceView />} />
+            <Route path="/" component={() => <ArtworksView />} />
           </Switch>
         </Providers>
       </HashRouter>

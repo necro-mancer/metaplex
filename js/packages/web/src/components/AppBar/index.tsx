@@ -25,16 +25,16 @@ const UserActions = () => {
       {store && (
         <>
           {/* <Link to={`#`}>
-            <Button className="app-btn">Bids</Button>
+            <Button className="app-btn">BIDS</Button>
           </Link> */}
           {canCreate ? (
             <Link to={`/art/create`}>
-              <Button className="app-btn">Create</Button>
+              <Button className="app-btn">MINT</Button>
             </Link>
           ) : null}
           <Link to={`/auction/create/0`}>
             <Button className="connector" type="primary">
-              Sell
+              SELL
             </Button>
           </Link>
         </>
@@ -54,20 +54,17 @@ const DefaultActions = ({ vertical = false }: { vertical?: boolean }) => {
     >
       <Link to={`/artworks`}>
         <Button className="app-btn">
-          {connected ? 'My Items' : 'Creati⦾ns'}
+          {connected ? 'MY ITEMS' : 'CREATIONS'}
         </Button>
       </Link>
       <Link to={`/artists`}>
-        <Button className="app-btn">Creat⦾rs</Button>
+        <Button className="app-btn">CREATORS</Button>
       </Link>
       <Link to={`/auctions`}>
-        <Button className="app-btn">Expl⦾re</Button>
+        <Button className="app-btn">EXPLORE</Button>
       </Link>
       <Link to={`/widgets`}>
-        <Button className="app-btn">Widgets</Button>
-      </Link>
-      <Link to={`/genspace`}>
-        <Button className="app-btn"><span>S</span><span style={{ fontSize: 22.5, fontWeight: 'bold' }}>⦾</span><span>LYPS</span></Button>
+        <Button className="app-btn">WIDGETS</Button>
       </Link>
     </div>
   );
@@ -89,29 +86,29 @@ const MetaplexMenu = () => {
               <Menu.Item>
                 <Link to={`/artworks`}>
                   <Button className="app-btn">
-                    {connected ? 'My Items' : 'Creati⦾ns'}
+                    {connected ? 'MY ITEMS' : 'CREATIONS'}
                   </Button>
                 </Link>
               </Menu.Item>
               <Menu.Item>
                 <Link to={`/artists`}>
-                  <Button className="app-btn">Creat⦾rs</Button>
+                  <Button className="app-btn">CREATORS</Button>
                 </Link>
               </Menu.Item>
               <Menu.Item>
                 <Link to={`/auctions`}>
-                  <Button className="app-btn">Expl⦾re</Button>
+                  <Button className="app-btn">EXPLORE</Button>
                 </Link>
               </Menu.Item>
               <Menu.Item>
                 <Link to={`/widgets`}>
-                  <Button className="app-btn">Widgets</Button>
+                  <Button className="app-btn">WIDGETS</Button>
                 </Link>
               </Menu.Item>
             </Menu>
           }
         >
-          <MenuOutlined style={{ fontSize: '1.4rem' }} />
+          <MenuOutlined style={{ fontSize: '1.0rem' }} />
         </Dropdown>
       </>
     );
