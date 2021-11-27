@@ -1,23 +1,24 @@
 import React from 'react';
-import { GithubOutlined, TwitterOutlined } from '@ant-design/icons';
+import { TwitterOutlined, CodeOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
 
 export const Footer = () => {
   return (
-    <div className={'footer'}>
+    <div style={{ marginBottom: '100px', marginLeft: '20px' }} className={'footer'}>
       <Button
-        shape={'circle'}
+        type={'link'}
+        size={'large'}
         target={'_blank'}
-        href={'https://github.com/necro-mancer/non-fungible-matrix'}
-        icon={<GithubOutlined />}
-        style={{ marginRight: '20px' }}
-      ></Button>
+        href={'https://github.com/necro-mancer'}
+        icon={<CodeOutlined />}
+      >GitHub</Button>
       <Button
-        shape={'circle'}
+        type={'link'}
+        size={'large'}
         target={'_blank'}
         href={'https://twitter.com/gsissh_matrix'}
         icon={<TwitterOutlined />}
-      ></Button>
+      >Twitter</Button>
     </div>
   );
 };

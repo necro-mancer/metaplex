@@ -10,6 +10,7 @@ import { AppLayout } from './components/Layout';
 import { MetaProvider } from './contexts/meta';
 import { CoingeckoProvider } from './contexts/coingecko';
 import { LoaderProvider } from './components/Loader';
+import { Footer } from './components/Footer';
 
 export const Providers: FC = ({ children }) => {
   return (
@@ -25,6 +26,7 @@ export const Providers: FC = ({ children }) => {
                   <LoaderProvider>
                     <ConfettiProvider>
                       <AppLayout>{children}</AppLayout>
+                      <Footer></Footer>
                     </ConfettiProvider>
                   </LoaderProvider>
                 </MetaProvider>
