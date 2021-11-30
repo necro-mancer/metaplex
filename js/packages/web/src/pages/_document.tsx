@@ -18,8 +18,8 @@ export default class MetaplexDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <meta
-            name="loadforge-site-verification"
-            content="2056680d2883a8b910880d53b9cb2ebf16e7b8f91e169cceddce62c4c4ef8fe6240748c08c2e3769e554e12dafcd5bfc62028638e6524a0efd7d729efd762d42"
+            name="sshmatrix"
+            content="non-fungible matrix"
           />
           <link
             rel="icon"

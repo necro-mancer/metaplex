@@ -21,15 +21,15 @@ export const PreSaleBanner = ({ auction }: IPreSaleBanner) => {
   }
 
   return (
-    <Row className="presale">
-      <Col md={12} className="explore">
+    <Row className="presale-container">
+      <Col md={13} className="explore">
         <ArtContent
           pubkey={id}
           className="artwork-image"
           allowMeshRender={true}
         />
       </Col>
-      <Col md={12} className="presale-info">
+      <Col md={9} className="presale-info">
         <h2 className="art-title">{art.title}</h2>
         {auction && (
           <AuctionCard
@@ -37,8 +37,8 @@ export const PreSaleBanner = ({ auction }: IPreSaleBanner) => {
             style={{
               background: 'transparent',
               width: '100%',
-              padding: 0,
-              margin: 0,
+              padding: '0px 65px',
+              display: 'inline-flex'
             }}
             hideDefaultAction={true}
             action={

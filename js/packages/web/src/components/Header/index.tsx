@@ -2,21 +2,21 @@ import React from 'react';
 import { TwitterOutlined, CodeOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
 
-export const Footer = () => {
+export const Header = () => {
   return (
-    <div style={{ marginBottom: '0px', marginLeft: '10px' }} className={'footer'}>
+    <div style={{ marginBottom: '-10px', marginLeft: '10px' }} className={'footer'}>
       <Button
         type={'link'}
         target={'_blank'}
         href={'https://github.com/necro-mancer'}
         icon={<CodeOutlined />}
-      >GitHub</Button>
+      ></Button>
       <Button
         type={'link'}
         target={'_blank'}
         href={'https://twitter.com/gsissh_matrix'}
         icon={<TwitterOutlined />}
-      >Twitter</Button>
+      ></Button>
     </div>
   );
 };

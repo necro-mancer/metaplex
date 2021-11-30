@@ -25,16 +25,16 @@ const UserActions = () => {
       {store && (
         <>
           {/* <Link to={`#`}>
-            <Button className="app-btn">BIDS</Button>
+            <Button className="app-btn">bids</Button>
           </Link> */}
           {canCreate ? (
             <Link to={`/art/create`}>
-              <Button className="app-btn">MINT</Button>
+              <Button className="app-btn">mint</Button>
             </Link>
           ) : null}
           <Link to={`/auction/create/0`}>
             <Button className="connector" type="primary">
-              SELL
+              sell
             </Button>
           </Link>
         </>
@@ -54,17 +54,17 @@ const DefaultActions = ({ vertical = false }: { vertical?: boolean }) => {
     >
       <Link to={`/artworks`}>
         <Button className="app-btn">
-          {connected ? 'MY ITEMS' : 'CREATIONS'}
+          {connected ? 'my items' : 'creations'}
         </Button>
       </Link>
       <Link to={`/artists`}>
-        <Button className="app-btn">CREATORS</Button>
+        <Button className="app-btn">creators</Button>
       </Link>
       <Link to={`/auctions`}>
-        <Button className="app-btn">EXPLORE</Button>
+        <Button className="app-btn">explore</Button>
       </Link>
       <Link to={`/widgets`}>
-        <Button className="app-btn">WIDGETS</Button>
+        <Button className="app-btn">widgets</Button>
       </Link>
     </div>
   );
@@ -86,23 +86,23 @@ const MetaplexMenu = () => {
               <Menu.Item>
                 <Link to={`/artworks`}>
                   <Button className="app-btn">
-                    {connected ? 'MY ITEMS' : 'CREATIONS'}
+                    {connected ? 'my items' : 'creations'}
                   </Button>
                 </Link>
               </Menu.Item>
               <Menu.Item>
                 <Link to={`/artists`}>
-                  <Button className="app-btn">CREATORS</Button>
+                  <Button className="app-btn">creators</Button>
                 </Link>
               </Menu.Item>
               <Menu.Item>
                 <Link to={`/auctions`}>
-                  <Button className="app-btn">EXPLORE</Button>
+                  <Button className="app-btn">explore</Button>
                 </Link>
               </Menu.Item>
               <Menu.Item>
                 <Link to={`/widgets`}>
-                  <Button className="app-btn">WIDGETS</Button>
+                  <Button className="app-btn">widgets</Button>
                 </Link>
               </Menu.Item>
             </Menu>

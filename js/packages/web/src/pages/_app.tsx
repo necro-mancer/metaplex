@@ -8,15 +8,10 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>N⦾n-fungible Matrix</title>
+        <title>n⦾n-fungible matrix</title>
       </Head>
       
       <div id="root">
-        <span style={{color: "orange"}}>(base) root@local:~$ </span>
-        <span style={{color:  "white"}}>gsissh matrix</span><br />
-        <span style={{color:  "white"}}>&gt; this space is powered by Metaplex, built on Solana & Arweave, and always under development; stay cautious.</span><br />
-        <span style={{color: "lightgreen"}}>(host) guest@matrix:~$ </span>
-        <span className="typewriter-end"></span>
         <Component {...pageProps} />
       </div>
     </>
