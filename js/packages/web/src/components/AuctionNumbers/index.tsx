@@ -54,7 +54,7 @@ export const AuctionNumbers = (props: { auctionView: AuctionView }) => {
           <Col span={12}>
             {(isUpcoming || bids.length === 0) && (
               <AmountLabel
-                style={{ marginBottom: 10, fontSize: '14px' }}
+                style={{ marginBottom: 10 }}
                 containerStyle={{ flexDirection: 'column' }}
                 title="Starting bid"
                 amount={fromLamports(
@@ -65,7 +65,7 @@ export const AuctionNumbers = (props: { auctionView: AuctionView }) => {
             )}
             {isStarted && bids.length > 0 && (
               <AmountLabel
-                style={{ marginBottom: 10, fontSize: '14px' }}
+                style={{ marginBottom: 10 }}
                 containerStyle={{ flexDirection: 'column' }}
                 title="Highest bid"
                 amount={formatTokenAmount(bids[0].info.lastBid, mintInfo)}
@@ -96,8 +96,8 @@ const Countdown = ({ state }: { state?: CountdownState }) => {
           <div
             className="info-header"
             style={{
-              margin: '12px 0',
-              fontSize: '14px',
+              margin: '12px 29px',
+              fontSize: '18px',
             }}
           >
             Time left
@@ -129,7 +129,7 @@ const Countdown = ({ state }: { state?: CountdownState }) => {
                     {state.hours}
                     <span style={{ opacity: 0.2 }}>:</span>
                   </div>
-                  <div className="cd-label">hour</div>
+                  <div className="cd-label">hours</div>
                 </Col>
                 <Col>
                   <div className="cd-number">

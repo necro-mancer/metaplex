@@ -96,7 +96,7 @@ export const AuctionRenderCard = (props: AuctionCard) => {
         title={`${name}`}
         description={
           <>
-            <h4 style={{ marginBottom: 0 }}>{label}</h4>
+            <div style={{ marginLeft: 25, fontSize: '14px' }}>{label}</div>
             <div className="bids">
               <AmountLabel
                 style={{ marginBottom: 10 }}

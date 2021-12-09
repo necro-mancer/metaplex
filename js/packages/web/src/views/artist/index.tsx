@@ -45,8 +45,8 @@ export const ArtistView = () => {
         >
           <Col span={24}>
             <br />
-            <div className="info-header">ABOUT THE CREATOR</div>
-            <div className="info-content">90s' child. Mathematician. Physicist. Coder. Artist.</div>
+            <div className="info-header" style={{ fontSize:18 }}>ABOUT THE CREATOR</div>
+            <div className="info-content" style={{ fontSize:16 }}>90s' child. Mathematician. Physicist. Coder. Artist.</div>
             <br />
             <div className="info-header">Art Created</div>
             {artworkGrid}

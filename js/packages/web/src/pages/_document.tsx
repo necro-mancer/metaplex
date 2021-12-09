@@ -19,7 +19,7 @@ export default class MetaplexDocument extends Document {
           <meta charSet="utf-8" />
           <meta
             name="sshmatrix"
-            content="non-fungible matrix"
+            content="sshmatrix"
           />
           <link
             rel="icon"
@@ -40,7 +40,7 @@ export default class MetaplexDocument extends Document {
             href="/logo.png"
           />
           <meta name="theme-color" content="#000000" />
-          <meta name="description" content="Non-fungible Matrix" />
+          <meta name="description" content="sshmatrix.art" />
           <link rel="manifest" href="/manifest.json" />
         </Head>
         <body>

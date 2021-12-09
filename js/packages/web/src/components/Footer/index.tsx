@@ -7,16 +7,18 @@ export const Footer = () => {
     <div style={{ marginBottom: '0px', marginLeft: '10px' }} className={'footer'}>
       <Button
         type={'link'}
+        size={'large'}
         target={'_blank'}
         href={'https://github.com/necro-mancer'}
-        icon={<CodeOutlined />}
-      >GitHub</Button>
+        icon={<CodeOutlined style={{ fontSize: '120%'}}/>}
+      ><span style={{ fontSize: '80%'}}>GitHub</span></Button>
       <Button
         type={'link'}
+        size={'large'}
         target={'_blank'}
         href={'https://twitter.com/gsissh_matrix'}
-        icon={<TwitterOutlined />}
-      >Twitter</Button>
+        icon={<TwitterOutlined style={{ fontSize: '120%'}}/>}
+      ><span style={{ fontSize: '80%'}}>Twitter</span></Button>
     </div>
   );
 };

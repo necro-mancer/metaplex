@@ -8,10 +8,10 @@ export const LoaderProvider: FC = ({ children }) => {
     <>
       <div className={`loader-container ${isLoading ? 'active' : ''}`}>
         <div className="loader-block">
-          <div className="loader-title">powered by metaplex <img src="img/metaplex.png" alt="" width="25" />, built on solana <img src="img/solana.png" alt="" width="25" /> & arweave <img src="img/arweave.png" alt="" width="25" /></div>
+          <div className="loader-title">powered by <img src="img/metaplex.png" alt="" width="25" /> <img src="img/github.png" alt="" width="22" /> and built on <img src="img/solana.png" alt="" width="25" /> <img src="img/arweave.png" alt="" width="25" /></div>
           <br></br>
           <Spinner /><br></br>
-          <div className="loader-title">patience is the highest virtue when loading web3. syncing with web3 ecosystem ...</div>
+          <div className="loader-title">be patient. syncing with web3 ecosystem ...</div>
         </div>
       </div>
       {children}

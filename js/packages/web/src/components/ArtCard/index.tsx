@@ -95,7 +95,7 @@ export const ArtCard = (props: ArtCardProps) => {
         title={`${name}`}
         description={
           <>
-            <MetaAvatar creators={creators} size={32} />&nbsp;<span className="info-content-small" ><i>by</i></span>&nbsp;<span className="info-content">necromancer</span><br></br><br></br>
+            <MetaAvatar creators={creators} size={32} />&nbsp;<span className="info-content-small" ><i>by</i></span>&nbsp;<span className="info-content">sshmatrix</span><br></br><br></br>
             {/* {art.type === ArtType.Master && (
               <>
                 <br />

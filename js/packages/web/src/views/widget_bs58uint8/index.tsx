@@ -77,7 +77,7 @@ export const WidgetBS58UINT8 = () => {
                       onOk() {navigator.clipboard.writeText('[' + `${convertBS58toUINT8}` + ']');
                       message.success('Copied to clipboard!');
                       },
-                      okText: "Copy 256-bit AES key",
+                      okText: "Copy AES key",
                       onCancel() {setString(''); message.success('Flushed!');},
                       cancelText: "Flush data",
                     });
@@ -101,7 +101,7 @@ export const WidgetBS58UINT8 = () => {
                       onOk() {navigator.clipboard.writeText('[' + `${convertBS58toUINT8}` + ']');
                       message.success('Copied to clipboard!');
                       },
-                      okText: "Copy 256-bit AES key",
+                      okText: "Copy AES key",
                       onCancel() {message.success('Flushed!')},
                       cancelText: "Flush data",
                     });

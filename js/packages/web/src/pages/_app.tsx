@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>n⦾n-fungible matrix</title>
+        <title>sshmatrix.art</title>
       </Head>
       
       <div id="root">
