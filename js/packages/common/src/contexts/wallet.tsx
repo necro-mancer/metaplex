@@ -52,28 +52,20 @@ export const WalletModal: FC = () => {
   return (
     <MetaplexModal visible={visible} onCancel={close}>
       <div
-        style={{
-          background:
-            'linear-gradient(180deg, #D329FC 0%, #8F6DDE 49.48%, #19E6AD 100%)',
-          borderRadius: 36,
-          width: 50,
-          height: 50,
-          textAlign: 'center',
-          verticalAlign: 'middle',
-          fontWeight: 700,
-          fontSize: '1.3rem',
-          lineHeight: 2.4,
-          marginBottom: 10,
-        }}
       >
-        ⦾
+        <span>
+          <img
+            src="/img/banner-w.gif"
+            style={{ width: 72 }}
+          />
+        </span>
       </div>
 
-      <h2>{selected ? 'Change provider' : 'P⦾wered by Metaplex '}</h2>
+      <h2>{selected ? 'Change provider' : 'Powered by Metaplex '}</h2>
       <p>
         {selected
-          ? 'Feel free to switch wallet provider'
-          : 'You must be signed in to place a bid'}
+          ? 'Switch wallet provider'
+          : 'Sign in to interact with ecosystem'}
       </p>
 
       <br />
